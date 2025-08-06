@@ -1,11 +1,10 @@
-﻿<!DOCTYPE html>
+﻿{% load static %}
+<!DOCTYPE html>
 <html>
 <head>
-    <title>{% block title %}Agenda Django{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'contact/css/style.css' %}">
 </head>
 <body>
-    {% block content %}
-    <!-- Conteúdo será inserido aqui -->
-    {% endblock %}
+    {% block content %}{% endblock %}
 </body>
 </html>
